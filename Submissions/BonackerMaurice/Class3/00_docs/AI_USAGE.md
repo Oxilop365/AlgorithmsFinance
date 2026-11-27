@@ -40,9 +40,10 @@ version of:
   the full-tree runs so the memory limit reflects the machine, not other
   programs.
 - **Accepted: stopping the full tree at N = 70,000.** I questioned why
-  N = 55,000 and 70,000 could not be run. I accepted that the full tree is
-  not attempted when it needs more than the free RAM (18.3 GiB), because
-  running it would push Windows into swap. This is the point where memory
+  N = 70,000 was not run for the full tree (N = 55,000 ran and used
+  11.3 GiB). I accepted that a tree needing more than 80% of free RAM
+  (18.3 of 20.9 GiB) is not attempted, because running it would push Windows
+  into swap. This is the point where memory
   binds, which is the result the lab asks for. Pure Python is skipped beyond
   the data length because its time grows with N² and adds nothing to the
   memory result.
